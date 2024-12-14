@@ -14,15 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
           </span>
           <span class="ki bj">/an</br> soit 14,33€/mois</span>
         `;
-      } else {
-        priceDisplay.innerHTML = `
+    } else {
+      priceDisplay.innerHTML = `
           <span class="ri ui zi">
             ${monthlyPrice}
             <sup class="mi vi">€</sup>
           </span>
           <span class="ki bj">/mois </br> soit 216€/an</span>
         `;
-      }
     }
 
     updatePrice(false);
