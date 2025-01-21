@@ -1,13 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionner les éléments nécessaires
     const togglePlan = document.querySelector("#togglePlan");
     const priceDisplay = document.querySelector("#priceDisplay");
-  
-    // Prix mensuels et annuels
+
     const monthlyPrice = "9,90";
     const yearlyPrice = "106,90";
-  
-    // Fonction pour mettre à jour l'affichage du prix
+
     function updatePrice(isYearly) {
       if (isYearly) {
         priceDisplay.innerHTML = `
@@ -27,21 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
       }
     }
-  
-    // Initialisation du prix au chargement
+
     updatePrice(false);
-  
-    // Écouteurs d'événements pour le toggle
+
     togglePlan.addEventListener("change", function() {
       updatePrice(this.checked);
     });
-  
-    // Écouteurs d'événements pour les labels Mensuel/Annuel
+
     document.querySelector(".monthly").addEventListener("click", () => {
       togglePlan.checked = false;
       updatePrice(false);
     });
-  
+
     document.querySelector(".yearly").addEventListener("click", () => {
       togglePlan.checked = true;
       updatePrice(true);
