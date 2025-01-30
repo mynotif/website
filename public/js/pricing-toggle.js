@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const togglePlan = document.querySelector("#togglePlan");
     const priceDisplay = document.querySelector("#priceDisplay");
 
-    const monthlyPrice = "9,90";
-    const yearlyPrice = "106,90";
+    const monthlyPrice = "18,00";
+    const yearlyPrice = "172,00";
 
     function updatePrice(isYearly) {
       if (isYearly) {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ${yearlyPrice}
             <sup class="mi vi">€</sup>
           </span>
-          <span class="ki bj">/an</span>
+          <span class="ki bj">/an</br> soit 14,33€/mois</span>
         `;
       } else {
         priceDisplay.innerHTML = `
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ${monthlyPrice}
             <sup class="mi vi">€</sup>
           </span>
-          <span class="ki bj">/mois </br> soit 118.80€/an</span>
+          <span class="ki bj">/mois </br> soit 216€/an</span>
         `;
       }
     }
