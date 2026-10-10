@@ -17,3 +17,16 @@ Limite : revue statique du reviewer ; essais navigateur, formatage et contrôle 
 ## Revue finale FAQ — 10 octobre 2026
 
 `REVIEW: PASS`. Après corrections de forme, le reviewer indépendant confirme qu’aucun écart Critical, Major ou Minor n’est ouvert pour la FAQ. Revue statique ciblée ; elle ne remplace pas la vérification navigateur/CI ni la validation humaine des notices juridiques.
+
+
+## Revue de l’extension gratuite — 10 octobre 2026
+
+`REVIEW: BLOCKED`. Revue indépendante statique par `/root/site_review`. Le propriétaire fixe la direction fonctionnelle, mais les capacités annoncées contredisent/dépassent les critères et ADR mobiles existants. Écarts à résoudre avant publication :
+
+- **Critical — Gmail :** l’envoi peut contenir des données patient ; PRD et ADR-011 excluent l’envoi par courriel ordinaire tant que canal, destinataire, contrat et sécurité ne sont pas qualifiés. La confirmation IDEL ne résout pas ce risque.
+- **Major — anomalies CPAM :** catalogue non qualifié (F12/R04), tandis que la facturation est hors périmètre V1 (PRD). L’automatisme et la précision ne sont pas prouvés.
+- **Major — Google Agenda et échéances 7–10 jours :** export calendrier tiers non décidé (F15/M16) ; cadence attend encore la recherche et validation métier (R01/OP-C12/ADR-006).
+- **Major — SCOR :** l’ADR-014 exige format, destination et test d’import avant toute allégation de compatibilité. Le scan et la sortie SCOR sont à distinguer.
+- **Major — sans limite :** quotas, volumes, stockage et coûts ne sont pas établis (PRD R09/OP-C11).
+
+Cette branche peut rester en brouillon comme proposition éditoriale reviewable. PRD/ADR/Architecture et recherche produit doivent être mis à jour, puis les choix qui exposent des données de santé validés, avant reprise et nouvelle revue. Aucun changement dans l’app n’est inclus.

@@ -21,3 +21,8 @@ Rendu : `output/playwright/prelaunch-desktop.png` et `output/playwright/prelaunc
 ## Vérification FAQ — 10 octobre 2026
 
 `VERIFY: PASS` pour la FAQ. Les sept questions couvrent le socle gratuit, la facturation, les documents/OCR et relecture, les rappels, les brouillons d'échanges et le travail en cabinet. Le contenu a été recoupé avec le périmètre V1 du PRD ; la réponse rappels précise qu'une notification peut ne pas être reçue. Aucun tarif ni promesse concurrente n'est repris. `npx prettier --check public/` et `git diff --check` passent. Parcours Playwright sur la page locale à 390 px et 1440 px : ancre #faq atteinte, menu desktop montre le lien FAQ, une réponse native s'ouvre ; console sans erreurs ni avertissements. Captures FAQ : `output/playwright/prelaunch-faq-desktop.png` et `output/playwright/prelaunch-faq-mobile.png`. La revue indépendante statique finale est PASS, sans remarque ouverte. CI GitHub `deploy` et statut Vercel Preview : PASS sur le commit `944feb1`.
+
+
+## Vérification de l’extension gratuite — 10 octobre 2026
+
+`VERIFY: PASS` sur le rendu et les interactions, mais gate produit `BLOCKED`. Playwright sur le worktree du site : les mentions SCOR, 7–10 jours, CPAM, sans limite, Gmail et Google Agenda apparaissent sur desktop et mobile ; FAQ visible ; console à 0 erreur/avertissement. `npx prettier --check public/` et `git diff --check` passent. Captures : `output/playwright/prelaunch-features-desktop.png`, `output/playwright/prelaunch-features-mobile.png`, `output/playwright/prelaunch-faq-mobile.png`. Ces contrôles statiques et navigateur ne prouvent pas que l’application réalise ces fonctions. Revue indépendante a relevé un Critical et plusieurs Major ; voir `review.md`. CI/Preview ne valent pas approbation produit.

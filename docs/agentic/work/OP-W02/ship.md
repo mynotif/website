@@ -11,3 +11,8 @@ Avant merge/publication, le contenu juridique des notices et le traitement des �
 ## Mise à jour FAQ — 10 octobre 2026
 
 Sept questions-réponses ont été ajoutées à la vitrine et au menu, avec accordéons natifs accessibles, sans prix. Elles reprennent les thèmes pertinents d'Eliane et Ozzen, mais restent fondées sur le PRD OrdoPro. Vérification navigateur local et revue indépendante FAQ finale : PASS, aucun écart ouvert. (La première passe PASS_WITH_MINOR a été résolue avant validation finale.) Captures incluses dans `output/playwright/`. CI GitHub `deploy` et statut Vercel Preview : PASS sur `944feb1` (10 octobre 2026). La preview protégée est accessible après connexion Vercel.
+
+
+## Extension de l’offre gratuite — 10 octobre 2026
+
+`SHIP: BLOCKED` avant merge/publication. Les nouveaux claims sont visibles sur la branche de PR pour revue, mais la revue indépendante `BLOCKED` relève un Critical Gmail et plusieurs Major. CI/Preview peuvent passer sans lever ce gate. Reprendre seulement après cadrage/validation PRD et ADR pour Gmail, Google Agenda, cadence, contrôle CPAM, format SCOR et quotas/coûts, puis nouvelle Verify/Review.

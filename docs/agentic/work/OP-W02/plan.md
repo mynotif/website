@@ -17,3 +17,13 @@ La page d'accueil devient une présentation produit du socle gratuit : couvertur
 ## FAQ OrdoPro — 10 octobre 2026
 
 Ajouter une section FAQ à `public/index.html`, reliée à la navigation, avec des questions originales inspirées des thèmes d'Eliane et Ozzen : gratuité, facturation, formats/OCR et relecture, rappels, brouillons d'échanges, usage en cabinet. Employer les contrôles natifs `<details>/<summary>` pour l'accessibilité et éviter un nouveau JavaScript ; créer des styles cohérents dans `public/css/style.css`, responsive et visibles au clavier. Vérifier le contenu au PRD, les ancres, l'ouverture/fermeture des réponses sur desktop/mobile, le formatage et la console. Aucun tarif ni garantie concurrente non vérifiée.
+
+
+## Extension de l'offre gratuite — 10 octobre 2026
+
+À la demande explicite du propriétaire, mettre à jour les cartes Fonctionnalités et la FAQ pour afficher le scan produisant les pièces au format SCOR, les pré-alertes 7–10 jours, les anomalies CPAM automatiques, les captures/brouillons sans limite, l'envoi Gmail et la synchronisation Google Agenda. Garder la relecture et confirmation IDEL. Ne pas reprendre tarifs/essai ni prétendre qu'une intégration ou règle est déjà implémentée sur mobile. Vérifier que les affirmations apparaissent, que les anciens libellés contradictoires sont retirés, puis refaire Prettier, diff check et rendu navigateur. Le cadrage de réalisation de ces promesses relève du PRD/stories mobiles et reste à faire avant implémentation / production.
+
+
+## Extension de l’offre gratuite — 10 octobre 2026
+
+À la demande explicite du propriétaire, les cartes Fonctionnalités et la FAQ annoncent le format SCOR, les pré-alertes 7–10 jours, les anomalies CPAM automatiques, les captures/brouillons sans limite, Gmail et Google Agenda. Conserver la relecture IDEL. Ces changements éditoriaux sont implémentés localement et testés ; la revue indépendante les a bloqués avant publication car les décisions métier, de données et de capacité ne sont pas cadrées dans le PRD/ADR mobile. Ne pas fusionner/déployer avant résolution et nouvelle revue.
