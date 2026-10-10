@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Cette application de gestion des patients est conçue pour faciliter le travail des professionnels de santé indépendants."
+      content="OrdoPro : le socle mobile gratuit imaginé pour les infirmières et infirmiers libéraux — tournées, dossiers patients, ordonnances, échéances et coordination."
     />
-    <title>Ordopro</title>
+    <title>OrdoPro — les outils du quotidien IDEL, réunis sur mobile</title>
     <link rel="icon" href="./images/logo_simple_centre.png" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -31,7 +31,9 @@
           </div>
           <button
             class="navbarOpen e i j/2 da bc fc vc be/2 ie le ne pe ui cn"
-            aria-label="navbarOpen"
+            aria-label="Ouvrir le menu"
+            aria-controls="mobile-navigation"
+            aria-expanded="false"
             name="navbarOpen"
           >
             <span class="zb gc wc uf hk"></span>
@@ -39,11 +41,11 @@
             <span class="zb gc wc uf hk"></span>
           </button>
 
-          <div class="menu-wrapper f dc oe bn">
+          <div id="mobile-navigation" class="menu-wrapper f dc oe bn">
             <button
               class="navbarClose d k l ea bc fc vc ie le ne ui cn"
               name="navbarClose"
-              aria-label="navbarClose"
+              aria-label="Fermer le menu"
             >
               <span class="zb gc wc ce uf hk"></span>
               <span class="ta zb gc wc de uf hk"></span>
@@ -66,15 +68,20 @@
                     href="#about"
                     class="menu-scroll cc le ki vi _i sj ok vk co"
                   >
-                    A propos
+                    À propos
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#faq" class="menu-scroll cc le ki vi _i sj ok vk co">
+                    FAQ
                   </a>
                 </li>
                 <li class="menu-item">
                   <a
-                    href="#pricing"
+                    href="#availability"
                     class="menu-scroll cc le ki vi _i sj ok vk co"
                   >
-                    Tarification
+                    Le socle gratuit
                   </a>
                 </li>
                 <li class="menu-item">
@@ -90,11 +97,8 @@
           </div>
 
           <div class="ua bc le me um">
-            <a
-              href="https://app.ordopro.fr/login"
-              class="dc _e vf lg ng ki vi aj qj _k"
-            >
-              Découvrir l'application
+            <a href="#availability" class="dc _e vf lg ng ki vi aj qj _k">
+              Explorer OrdoPro
             </a>
           </div>
         </div>
@@ -105,787 +109,318 @@
     <!-- ======= Main Start ======= -->
     <main>
       <!-- ======= Hero Start ======= -->
-      <section id="home" class="sh">
-        <div class="a on fo">
-          <div class="ma bc je le">
-            <div class="uc qg ln/12">
-              <div class="wow fadeInUp lb wm pn" data-wow-delay=".2s">
-                <span class="cb zb pi vi xi _i ok rl jp">
-                  Simplifiez la gestion de vos ordonnances.
-                </span>
-                <h1 class="hb qi ui xi _i ok sl hm no kp">
-                  Facile, intuitif
-                  <span class="ac ag dg cj">
-                    et dédié à la pratique des infirmiers libéraux.
-                  </span>
-                </h1>
-                <p class="bb nd ki yi bj">
-                  Gagnez du temps au quotidien grâce à une application
-                  ergonomique et fiable.
-                </p>
-
-                <a
-                  href="https://app.ordopro.fr/register"
-                  class="mb hb cc lc le cf uf wg ng aj qj hk pk uk"
-                >
-                  <span class="nb nf pf sf th yi ek">
-                    Commencez dès maintenant
-                  </span>
-                </a>
-              </div>
-            </div>
+      <section id="home" class="prelaunch-hero">
+        <div class="a prelaunch-hero__grid">
+          <div class="prelaunch-hero__copy">
+            <p class="prelaunch-eyebrow">
+              Pensé pour les infirmières et infirmiers libéraux
+            </p>
+            <h1>Le quotidien IDEL, réuni dans OrdoPro.</h1>
+            <p class="prelaunch-lead">
+              Une application mobile gratuite conçue pour rassembler les
+              essentiels de votre activité : tournées, dossiers patients,
+              ordonnances et suivi des renouvellements.
+            </p>
+            <a class="prelaunch-text-link" href="#features"
+              >Découvrir OrdoPro <span aria-hidden="true">→</span></a
+            >
           </div>
-
-          <div class="uc qg mn/12">
-            <div class="wow fadeInUp f ga la uc od uh um" data-wow-delay=".3s">
-              <img
-                src="images/homePage.png"
-                alt="image home de l'application ordopro"
-                class="la gd"
-              />
-              <div class="qp e g h q ha ec uc af ag">
-                <div class="e r q">
-                  <svg
-                    width="72"
-                    height="51"
-                    viewBox="0 0 72 51"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_5_3665)">
-                      <path
-                        d="M22.378 0.4157C22.3814 0.342879 22.3851 0.270712 22.3891 0.199219C22.3857 0.271606 22.382 0.343766 22.378 0.4157C22.0401 7.83785 25.7079 22.0514 43.163 21.2025C36.0333 21.7022 21.9045 26.7677 22.3875 43.0291C22.1659 35.9367 17.5749 21.9221 1.00683 21.8442C0.856728 21.8465 0.709534 21.8469 0.56543 21.8454C0.713499 21.8439 0.86063 21.8435 1.00683 21.8442C8.04005 21.7355 21.4537 17.3609 22.378 0.4157Z"
-                        fill="#7083F5"
-                      />
-                      <path
-                        d="M59.3487 24.4888C59.3506 24.4451 59.3528 24.4018 59.3552 24.3589C59.3532 24.4023 59.351 24.4456 59.3487 24.4888C59.1459 28.942 61.3466 37.4702 71.8196 36.9608C67.5418 37.2606 59.0645 40.3 59.3543 50.0568C59.2213 45.8014 56.4667 37.3926 46.5259 37.3459C46.4359 37.3473 46.3475 37.3475 46.261 37.3466C46.3499 37.3457 46.4382 37.3454 46.5259 37.3459C50.7458 37.2807 58.794 34.6559 59.3487 24.4888Z"
-                        fill="#19DEBB"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_5_3665">
-                        <rect
-                          width="71.2541"
-                          height="49.8779"
-                          fill="white"
-                          transform="translate(0.56543 0.199219)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="e s h">
-                  <svg
-                    width="65"
-                    height="36"
-                    viewBox="0 0 65 36"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M55.4149 1.83203C53.339 1.57898 51.3475 2.4214 49.2904 4.18456C45.9052 7.08611 40.0313 8.52953 34.7368 4.19769C32.4686 2.34195 30.4917 2.04856 28.8583 2.32079C27.1672 2.60264 25.7448 3.50424 24.6267 4.24961C22.8559 5.43014 20.9059 6.67067 18.66 6.9618C16.3417 7.2623 13.8664 6.54246 11.0465 4.19256C8.68539 2.22501 6.66504 1.84655 5.11312 2.08531C3.52522 2.32961 2.288 3.24185 1.57603 4.08328C1.25719 4.46008 0.69326 4.50708 0.316454 4.18824C-0.0603521 3.86941 -0.107346 3.30548 0.21149 2.92867C1.13803 1.83367 2.73868 0.642115 4.84131 0.318626C6.97991 -0.0103986 9.50274 0.579362 12.1908 2.81939C14.7333 4.93815 16.7266 5.40998 18.4302 5.18915C20.2062 4.95894 21.831 3.96513 23.6352 2.76234L24.131 3.50597L23.6352 2.76234C24.7515 2.01814 26.4572 0.908837 28.5644 0.557635C30.7295 0.196804 33.2212 0.648204 35.8687 2.81426C40.3566 6.48615 45.2562 5.28815 48.1272 2.82739C50.3886 0.889088 52.8657 -0.279434 55.6312 0.057691C58.3691 0.391448 61.1615 2.17558 64.1309 5.60179C64.4541 5.9748 64.4138 6.53924 64.0408 6.86252C63.6678 7.18579 63.1034 7.14547 62.7801 6.77246C59.9402 3.49563 57.5184 2.08846 55.4149 1.83203Z"
-                      fill="#F76D8D"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M55.4149 11.2026C53.339 10.9496 51.3475 11.792 49.2904 13.5552C45.9052 16.4567 40.0312 17.9001 34.7367 13.5683C32.4686 11.7126 30.4916 11.4192 28.8583 11.6914C27.1671 11.9732 25.7447 12.8748 24.6267 13.6202C22.8559 14.8007 20.9058 16.0413 18.66 16.3324C16.3417 16.6329 13.8663 15.9131 11.0464 13.5632C8.68536 11.5956 6.66501 11.2172 5.11309 11.4559C3.52519 11.7002 2.28797 12.6125 1.576 13.4539C1.25716 13.8307 0.69323 13.8777 0.316424 13.5588C-0.0603826 13.24 -0.107377 12.6761 0.211459 12.2993C1.138 11.2043 2.73865 10.0127 4.84128 9.68923C6.97988 9.36021 9.50271 9.94997 12.1907 12.19C14.7333 14.3088 16.7266 14.7806 18.4302 14.5598C20.2061 14.3295 21.831 13.3357 23.6352 12.1329L24.1309 12.8766L23.6352 12.1329C24.7515 11.3887 26.4572 10.2794 28.5644 9.92824C30.7294 9.56741 33.2212 10.0188 35.8686 12.1849C40.3565 15.8568 45.2562 14.6588 48.1271 12.198C50.3885 10.2597 52.8657 9.09117 55.6312 9.4283C58.3691 9.76205 61.1614 11.5462 64.1308 14.9724C64.4541 15.3454 64.4138 15.9098 64.0408 16.2331C63.6678 16.5564 63.1033 16.5161 62.7801 16.1431C59.9401 12.8662 57.5184 11.4591 55.4149 11.2026Z"
-                      fill="#F76D8D"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M55.4149 20.5825C53.339 20.3295 51.3475 21.1719 49.2904 22.935C45.9052 25.8366 40.0312 27.28 34.7367 22.9482C32.4686 21.0924 30.4916 20.7991 28.8583 21.0713C27.1671 21.3531 25.7447 22.2547 24.6267 23.0001C22.8559 24.1806 20.9058 25.4212 18.66 25.7123C16.3417 26.0128 13.8663 25.293 11.0464 22.9431C8.68536 20.9755 6.66501 20.597 5.11309 20.8358C3.52519 21.0801 2.28797 21.9923 1.576 22.8338C1.25716 23.2106 0.69323 23.2576 0.316424 22.9387C-0.0603826 22.6199 -0.107377 22.056 0.211459 21.6792C1.138 20.5842 2.73865 19.3926 4.84128 19.0691C6.97988 18.7401 9.50271 19.3299 12.1907 21.5699C14.7333 23.6886 16.7266 24.1605 18.4302 23.9396C20.2061 23.7094 21.831 22.7156 23.6352 21.5128L24.1309 22.2565L23.6352 21.5128C24.7515 20.7686 26.4572 19.6593 28.5644 19.3081C30.7294 18.9473 33.2212 19.3987 35.8686 21.5647C40.3565 25.2366 45.2562 24.0386 48.1271 21.5779C50.3885 19.6396 52.8657 18.4711 55.6312 18.8082C58.3691 19.1419 61.1614 20.9261 64.1308 24.3523C64.4541 24.7253 64.4138 25.2897 64.0408 25.613C63.6678 25.9363 63.1033 25.896 62.7801 25.523C59.9401 22.2461 57.5184 20.8389 55.4149 20.5825Z"
-                      fill="#F76D8D"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M55.4149 29.9619C53.339 29.7089 51.3475 30.5513 49.2904 32.3144C45.9052 35.216 40.0312 36.6594 34.7367 32.3276C32.4686 30.4718 30.4916 30.1784 28.8583 30.4507C27.1671 30.7325 25.7447 31.6341 24.6267 32.3795C22.8559 33.56 20.9058 34.8006 18.66 35.0917C16.3417 35.3922 13.8663 34.6723 11.0464 32.3224C8.68536 30.3549 6.66501 29.9764 5.11309 30.2152C3.52519 30.4595 2.28797 31.3717 1.576 32.2132C1.25716 32.59 0.69323 32.637 0.316424 32.3181C-0.0603826 31.9993 -0.107377 31.4354 0.211459 31.0586C1.138 29.9635 2.73865 28.772 4.84128 28.4485C6.97988 28.1195 9.50271 28.7092 12.1907 30.9493C14.7333 33.068 16.7266 33.5399 18.4302 33.319C20.2061 33.0888 21.831 32.095 23.6352 30.8922L24.1309 31.6359L23.6352 30.8922C24.7515 30.148 26.4572 29.0387 28.5644 28.6875C30.7294 28.3267 33.2212 28.7781 35.8686 30.9441C40.3565 34.616 45.2562 33.418 48.1271 30.9573C50.3885 29.019 52.8657 27.8504 55.6312 28.1876C58.3691 28.5213 61.1614 30.3055 64.1308 33.7317C64.4541 34.1047 64.4138 34.6691 64.0408 34.9924C63.6678 35.3157 63.1033 35.2754 62.7801 34.9023C59.9401 31.6255 57.5184 30.2183 55.4149 29.9619Z"
-                      fill="#F76D8D"
-                    />
-                  </svg>
-                </div>
-              </div>
+          <div
+            class="prelaunch-preview"
+            aria-label="Illustration des outils OrdoPro"
+          >
+            <div class="prelaunch-preview__top">
+              <span>OrdoPro</span><span>Votre activité, en un coup d’œil</span>
             </div>
+            <div class="prelaunch-preview__day">
+              Votre journée, au même endroit.
+            </div>
+            <div class="prelaunch-preview__item">
+              <span class="prelaunch-preview__dot"></span
+              ><span>Tournée et visites</span><strong>Organisées</strong>
+            </div>
+            <div class="prelaunch-preview__item">
+              <span class="prelaunch-preview__dot"></span
+              ><span>Dossiers patients</span><strong>Centralisés</strong>
+            </div>
+            <div class="prelaunch-preview__item">
+              <span class="prelaunch-preview__dot"></span><span>Échéances</span
+              ><strong>À suivre</strong>
+            </div>
+            <p>Illustration — aucune donnée patient réelle.</p>
           </div>
         </div>
       </section>
       <!-- ======= Hero End ======= -->
 
       <!-- ======= Features Start ======= -->
-      <section id="features" class="f ga vh">
+      <section id="features" class="prelaunch-section">
         <div class="a">
-          <div class="wow fadeInUp la pb pd ji xm" data-wow-delay=".2s">
-            <h2 class="_a qi ui _i ok tl im lm">
-              Des fonctionnalités pour simplifier votre quotidien
-            </h2>
-            <p class="ki bj">
-              Optimiser la gestion des ordonnances, vous permettant ainsi de
-              gagner du temps et de vous concentrer sur ce qui compte vraiment.
-            </p>
+          <p class="prelaunch-eyebrow">Pensé pour le quotidien IDEL</p>
+          <h2>Tout le suivi de vos patients, simplement.</h2>
+          <p class="prelaunch-section__intro">
+            De la tournée au renouvellement, OrdoPro a été conçu pour réunir les
+            repères utiles au cabinet comme en visite, en laissant à
+            l'infirmière le contrôle des données et des actions.
+          </p>
+          <div class="prelaunch-features">
+            <article class="prelaunch-card">
+              <span>01</span>
+              <h3>Tournées et agenda</h3>
+              <p>
+                Planifier les visites, ordonner les étapes de la journée et
+                retrouver le fil de chaque tournée.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>02</span>
+              <h3>Dossiers et transmissions</h3>
+              <p>
+                Réunir les informations utiles, les observations, les constantes
+                et les photos de soin dans le dossier patient.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>03</span>
+              <h3>Ordonnances et documents</h3>
+              <p>
+                Scanner ou importer une prescription, vérifier les informations
+                reconnues et générer ses pièces au format SCOR.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>04</span>
+              <h3>Échéances et rappels</h3>
+              <p>
+                Recevoir une pré-alerte 7 à 10 jours avant échéance, avec un
+                rappel mobile et une synchronisation avec Google Agenda.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>05</span>
+              <h3>Classement et vérifications</h3>
+              <p>
+                Détecter automatiquement les anomalies CPAM et les points de
+                vigilance d'une ordonnance. Vous vérifiez les alertes avant
+                toute transmission.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>06</span>
+              <h3>Renouvellements et échanges</h3>
+              <p>
+                Créer sans limite des captures et brouillons de renouvellement,
+                de transmission ou de correction, puis les envoyer depuis Gmail
+                après relecture et confirmation.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>07</span>
+              <h3>Transmissions de soins</h3>
+              <p>
+                Retrouver le journal de suivi par patient et partager les
+                éléments utiles avec les membres autorisés de votre cabinet.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>08</span>
+              <h3>Prescriptions infirmières</h3>
+              <p>
+                Préparer une prescription à partir du référentiel applicable, la
+                relire et la confirmer avant son émission.
+              </p>
+            </article>
+            <article class="prelaunch-card">
+              <span>09</span>
+              <h3>Agenda et suivi des actions</h3>
+              <p>
+                Planifier les prochaines étapes, retrouver les actions menées et
+                savoir ce qui reste à traiter dans chaque dossier.
+              </p>
+            </article>
           </div>
-        </div>
-
-        <div class="a hd">
-          <div class="df tf xg wh xh ij jk rk gm ko io fp">
-            <div class="ma bc je">
-              <div class="uc qg am/2 kn/3">
-                <div class="wow fadeInUp yj la qb qd ji" data-wow-delay=".2s">
-                  <div class="la va bc mc _c le ne ef xf dj mj zj ak kk ok xk">
-                    <svg
-                      width="44"
-                      height="44"
-                      viewBox="0 0 44 44"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_28_4)">
-                        <path
-                          d="M22 3.66675C32.1255 3.66675 40.3333 11.8746 40.3333 22.0001C40.3333 32.1256 32.1255 40.3334 22 40.3334C11.8745 40.3334 3.66666 32.1256 3.66666 22.0001C3.66666 11.8746 11.8745 3.66675 22 3.66675ZM22 7.33341C18.1101 7.33341 14.3796 8.87865 11.6291 11.6292C8.87856 14.3797 7.33332 18.1102 7.33332 22.0001C7.33332 25.8899 8.87856 29.6204 11.6291 32.371C14.3796 35.1215 18.1101 36.6667 22 36.6667C25.8898 36.6667 29.6204 35.1215 32.3709 32.371C35.1214 29.6204 36.6667 25.8899 36.6667 22.0001C36.6667 18.1102 35.1214 14.3797 32.3709 11.6292C29.6204 8.87865 25.8898 7.33341 22 7.33341ZM16.1755 28.1289L14.7272 30.6406C14.6282 30.8125 14.4964 30.9632 14.3392 31.0842C14.182 31.2051 14.0025 31.2939 13.811 31.3455C13.6194 31.3971 13.4196 31.4104 13.2229 31.3848C13.0263 31.3592 12.8366 31.295 12.6647 31.1961C12.4928 31.0971 12.342 30.9653 12.2211 30.8081C12.1001 30.6509 12.0113 30.4714 11.9597 30.2799C11.9082 30.0884 11.8948 29.8886 11.9204 29.6919C11.9461 29.4952 12.0102 29.3055 12.1092 29.1336L13.189 27.2709C14.399 26.8932 15.3908 27.1829 16.1755 28.1289ZM24.2183 15.8767L28.6605 23.5657H32.5857C32.7838 23.565 32.9802 23.6035 33.1635 23.6789C33.3468 23.7544 33.5133 23.8653 33.6535 24.0054C33.7938 24.1455 33.9049 24.3119 33.9806 24.495C34.0563 24.6782 34.095 24.8746 34.0945 25.0727C34.0952 25.2711 34.0567 25.4676 33.9811 25.651C33.9055 25.8344 33.7944 26.001 33.6542 26.1413C33.5139 26.2815 33.3473 26.3926 33.1639 26.4682C32.9805 26.5438 32.784 26.5823 32.5857 26.5816H30.404L31.8762 29.1317C32.0627 29.4778 32.107 29.8829 31.9996 30.2611C31.8922 30.6393 31.6416 30.9607 31.3011 31.1572C30.9605 31.3536 30.5568 31.4095 30.1757 31.313C29.7946 31.2166 29.4661 30.9753 29.26 30.6406L23.6867 20.9862C22.4217 18.8046 23.3237 16.6174 24.2183 15.8767ZM24.728 10.2961C25.4522 10.7104 25.696 11.6344 25.2817 12.3586L18.8137 23.5584H23.4942C25.0085 23.5584 25.8592 25.3404 25.201 26.5742H11.4877C11.2895 26.5747 11.0931 26.536 10.91 26.4603C10.7268 26.3847 10.5604 26.2735 10.4203 26.1333C10.2803 25.9931 10.1693 25.8265 10.0939 25.6433C10.0184 25.46 9.97993 25.2636 9.98066 25.0654C9.98017 24.8674 10.0188 24.6712 10.0944 24.4881C10.1699 24.3051 10.2809 24.1388 10.421 23.9987C10.561 23.8587 10.7273 23.7477 10.9104 23.6721C11.0934 23.5966 11.2896 23.5579 11.4877 23.5584H15.3322L20.2547 15.0279L18.7183 12.3586C18.5318 12.0125 18.4875 11.6074 18.5949 11.2292C18.7023 10.851 18.9528 10.5296 19.2934 10.3332C19.6339 10.1368 20.0376 10.0808 20.4188 10.1773C20.7999 10.2738 21.1284 10.515 21.3345 10.8497L21.9927 12.0102L22.6655 10.8497C22.7644 10.6779 22.8963 10.5271 23.0536 10.4063C23.2108 10.2854 23.3904 10.1967 23.5819 10.1453C23.7735 10.0938 23.9733 10.0807 24.17 10.1066C24.3666 10.1325 24.5562 10.1968 24.728 10.2961Z"
-                          fill="currentColor"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_28_4">
-                          <rect width="44" height="44" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <h3 class="_a ni wi _i ok rl lp">Alertes avant expiration</h3>
-                  <p class="ki bj">
-                    L'application vous informera avant l'expiration de votre
-                    ordonnance.
-                  </p>
-                </div>
-              </div>
-
-              <div class="uc qg am/2 kn/3">
-                <div class="wow fadeInUp yj la qb qd ji" data-wow-delay=".3s">
-                  <div class="la va bc mc _c le ne ef xf dj mj zj ak kk ok xk">
-                    <svg
-                      width="44"
-                      height="44"
-                      viewBox="0 0 44 44"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_211_934)">
-                        <path
-                          d="M23.2007 4.24461L38.2241 13.2576C38.3511 13.3337 38.4562 13.4413 38.5292 13.5701C38.6022 13.6989 38.6406 13.8444 38.6406 13.9924C38.6406 14.1405 38.6022 14.286 38.5292 14.4147C38.4562 14.5435 38.3511 14.6512 38.2241 14.7272L22.3203 24.2695L6.41652 14.7272C6.28951 14.6512 6.18437 14.5435 6.11137 14.4147C6.03837 14.286 6 14.1405 6 13.9924C6 13.8444 6.03837 13.6989 6.11137 13.5701C6.18437 13.4413 6.28951 13.3337 6.41652 13.2576L21.4382 4.24461C21.7046 4.08456 22.0095 4 22.3203 4C22.6311 4 22.936 4.08456 23.2024 4.24461H23.2007Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M36.1653 19.9874L38.2241 21.2224C38.3512 21.2984 38.4563 21.4061 38.5293 21.5349C38.6023 21.6637 38.6407 21.8092 38.6407 21.9572C38.6407 22.1052 38.6023 22.2507 38.5293 22.3795C38.4563 22.5083 38.3512 22.616 38.2241 22.692L22.3204 32.2343L6.41658 22.692C6.28956 22.616 6.18443 22.5083 6.11143 22.3795C6.03843 22.2507 6.00005 22.1052 6.00005 21.9572C6.00005 21.8092 6.03843 21.6637 6.11143 21.5349C6.18443 21.4061 6.28956 21.2984 6.41658 21.2224L8.47542 19.9874L22.3204 28.2947L36.1653 19.9874ZM36.1653 28.0378L38.2241 29.2728C38.3512 29.3488 38.4563 29.4565 38.5293 29.5853C38.6023 29.714 38.6407 29.8595 38.6407 30.0076C38.6407 30.1556 38.6023 30.3011 38.5293 30.4299C38.4563 30.5587 38.3512 30.6664 38.2241 30.7424L23.2025 39.7554C22.9361 39.9154 22.6311 40 22.3204 40C22.0096 40 21.7046 39.9154 21.4382 39.7554L6.41658 30.7424C6.28956 30.6664 6.18443 30.5587 6.11143 30.4299C6.03843 30.3011 6.00005 30.1556 6.00005 30.0076C6.00005 29.8595 6.03843 29.714 6.11143 29.5853C6.18443 29.4565 6.28956 29.3488 6.41658 29.2728L8.47542 28.0378L22.3204 36.3451L36.1653 28.0378Z"
-                          fill="currentColor"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_211_934">
-                          <rect width="44" height="44" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <h3 class="_a ni wi _i ok rl lp">Communication directe</h3>
-                  <p class="ki bj">
-                    Contactez le cabinet ou le médecin directement via
-                    l'application.
-                  </p>
-                </div>
-              </div>
-
-              <div class="uc qg am/2 kn/3">
-                <div class="wow fadeInUp yj la qb qd ji" data-wow-delay=".4s">
-                  <div class="la va bc mc _c le ne ef xf dj mj zj ak kk ok xk">
-                    <svg
-                      width="44"
-                      height="44"
-                      viewBox="0 0 44 44"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_211_982)">
-                        <path
-                          d="M10.0155 8.12727C13.3422 5.24464 17.5981 3.66062 22 3.66677C32.1255 3.66677 40.3333 11.8746 40.3333 22.0001C40.3333 25.9161 39.105 29.5461 37.015 32.5234L31.1667 22.0001H36.6667C36.6669 19.1247 35.822 16.3127 34.2369 13.9137C32.6518 11.5147 30.3965 9.63456 27.7515 8.50699C25.1064 7.37943 22.1883 7.05422 19.3599 7.5718C16.5315 8.08938 13.9177 9.42691 11.8433 11.4181L10.0155 8.12727Z"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M33.9845 35.8729C30.6578 38.7555 26.4018 40.3396 22 40.3334C11.8745 40.3334 3.66663 32.1256 3.66663 22.0001C3.66663 18.0841 4.89496 14.4541 6.98496 11.4767L12.8333 22.0001H7.33329C7.33306 24.8754 8.178 27.6874 9.76308 30.0864C11.3481 32.4854 13.6034 34.3656 16.2485 35.4932C18.8935 36.6207 21.8117 36.946 24.64 36.4284C27.4684 35.9108 30.0823 34.5733 32.1566 32.5821L33.9845 35.8729Z"
-                          fill="currentColor"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_211_982">
-                          <rect width="44" height="44" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <h3 class="_a ni wi _i ok rl lp">Accès centralisé</h3>
-                  <p class="ki bj">
-                    Accédez à toutes les données depuis une interface unique et
-                    intuitive.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Graphics -->
-        <div class="e g q ha">
-          <svg
-            width="602"
-            height="1154"
-            viewBox="0 0 602 1154"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g opacity="0.25" filter="url(#filter0_f_26_84)">
-              <circle
-                cx="577"
-                cy="577"
-                r="317"
-                fill="url(#paint0_linear_26_84)"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_26_84"
-                x="0"
-                y="0"
-                width="1154"
-                height="1154"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="130"
-                  result="effect1_foregroundBlur_26_84"
-                />
-              </filter>
-              <linearGradient
-                id="paint0_linear_26_84"
-                x1="183.787"
-                y1="894"
-                x2="970.173"
-                y2="346.491"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#8EA5FE" />
-                <stop offset="0.541667" stop-color="#BEB3FD" />
-                <stop offset="1" stop-color="#90D1FF" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="e h t/2 ha dc xl">
-          <svg
-            width="622"
-            height="1236"
-            viewBox="0 0 622 1236"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g opacity="0.2" filter="url(#filter0_f_26_85)">
-              <circle
-                cx="4"
-                cy="618"
-                r="368"
-                fill="url(#paint0_linear_26_85)"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_26_85"
-                x="-614"
-                y="0"
-                width="1236"
-                height="1236"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="125"
-                  result="effect1_foregroundBlur_26_85"
-                />
-              </filter>
-              <linearGradient
-                id="paint0_linear_26_85"
-                x1="-364"
-                y1="250"
-                x2="506.12"
-                y2="754.835"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#FF8FE8" />
-                <stop offset="1" stop-color="#FFC960" />
-              </linearGradient>
-            </defs>
-          </svg>
         </div>
       </section>
       <!-- ======= Features End ======= -->
 
       <!-- ======= About Start ======= -->
-      <section id="about" class="f lh">
-        <div class="a qn">
+      <section id="about" class="prelaunch-about">
+        <div class="a prelaunch-about__grid">
           <div>
-            <div class="ma bc je le oe">
-              <div class="uc qg kn/2">
-                <div
-                  class="wow fadeInUp f ga la pb uc rd yh tm wm"
-                  data-wow-delay=".2s"
-                >
-                  <img
-                    src="images/ordonnanceList.png"
-                    alt="image des ordonnaces du l'application'"
-                    class="la gd"
-                  />
-
-                  <div class="e g u ha">
-                    <svg
-                      width="72"
-                      height="50"
-                      viewBox="0 0 72 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clip-path="url(#clip0_33_10)">
-                        <path
-                          d="M21.8126 0.216481C21.8159 0.143661 21.8196 0.071493 21.8237 0C21.8203 0.0723874 21.8165 0.144547 21.8126 0.216481C21.4747 7.63863 25.1425 21.8522 42.5976 21.0032C35.4678 21.503 21.3391 26.5685 21.822 42.8298C21.6005 35.7375 17.0094 21.7229 0.441399 21.645C0.291298 21.6473 0.144104 21.6477 0 21.6462C0.148069 21.6447 0.2952 21.6443 0.441399 21.645C7.47462 21.5363 20.8883 17.1617 21.8126 0.216481Z"
-                          fill="#7083F5"
-                        />
-                        <path
-                          d="M58.7832 24.2896C58.7851 24.2459 58.7874 24.2025 58.7898 24.1597C58.7878 24.2031 58.7855 24.2464 58.7832 24.2896C58.5804 28.7428 60.7811 37.271 71.2541 36.7616C66.9763 37.0614 58.499 40.1008 58.7888 49.8576C58.6559 45.6022 55.9013 37.1934 45.9605 37.1467C45.8704 37.1481 45.782 37.1482 45.6956 37.1474C45.7844 37.1465 45.8727 37.1462 45.9605 37.1467C50.1803 37.0815 58.2286 34.4567 58.7832 24.2896Z"
-                          fill="#7ED8FF"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_33_10">
-                          <rect width="71.2541" height="49.8779" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <div class="e p h ha nc/2 uc ff ag">
-                    <div class="e v w ha">
-                      <svg
-                        width="65"
-                        height="36"
-                        viewBox="0 0 65 36"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M55.4149 1.83203C53.339 1.57898 51.3475 2.4214 49.2904 4.18456C45.9052 7.08611 40.0313 8.52953 34.7368 4.19769C32.4686 2.34195 30.4917 2.04856 28.8583 2.32079C27.1672 2.60264 25.7448 3.50424 24.6267 4.24961C22.8559 5.43014 20.9059 6.67067 18.66 6.9618C16.3417 7.2623 13.8664 6.54246 11.0465 4.19256C8.68539 2.22501 6.66504 1.84655 5.11312 2.08531C3.52522 2.32961 2.288 3.24185 1.57603 4.08328C1.25719 4.46008 0.69326 4.50708 0.316454 4.18824C-0.0603521 3.86941 -0.107346 3.30548 0.21149 2.92867C1.13803 1.83367 2.73868 0.642115 4.84131 0.318626C6.97991 -0.0103986 9.50274 0.579362 12.1908 2.81939C14.7333 4.93815 16.7266 5.40998 18.4302 5.18915C20.2062 4.95894 21.831 3.96513 23.6352 2.76234L24.131 3.50597L23.6352 2.76234C24.7515 2.01814 26.4572 0.908837 28.5644 0.557635C30.7295 0.196804 33.2212 0.648204 35.8687 2.81426C40.3566 6.48615 45.2562 5.28815 48.1272 2.82739C50.3886 0.889088 52.8657 -0.279434 55.6312 0.057691C58.3691 0.391448 61.1615 2.17558 64.1309 5.60179C64.4541 5.9748 64.4138 6.53924 64.0408 6.86252C63.6678 7.18579 63.1034 7.14547 62.7801 6.77246C59.9402 3.49563 57.5184 2.08846 55.4149 1.83203Z"
-                          fill="#7083F5"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M55.4149 11.2024C53.339 10.9493 51.3475 11.7918 49.2904 13.5549C45.9052 16.4565 40.0312 17.8999 34.7367 13.5681C32.4686 11.7123 30.4916 11.4189 28.8583 11.6912C27.1671 11.973 25.7447 12.8746 24.6267 13.62C22.8559 14.8005 20.9058 16.041 18.66 16.3322C16.3417 16.6327 13.8663 15.9128 11.0464 13.5629C8.68536 11.5954 6.66501 11.2169 5.11309 11.4557C3.52519 11.7 2.28797 12.6122 1.576 13.4536C1.25716 13.8304 0.69323 13.8774 0.316424 13.5586C-0.0603826 13.2398 -0.107377 12.6758 0.211459 12.299C1.138 11.204 2.73865 10.0125 4.84128 9.68899C6.97988 9.35996 9.50271 9.94972 12.1907 12.1897C14.7333 14.3085 16.7266 14.7803 18.4302 14.5595C20.2061 14.3293 21.831 13.3355 23.6352 12.1327L24.1309 12.8763L23.6352 12.1327C24.7515 11.3885 26.4572 10.2792 28.5644 9.928C30.7294 9.56717 33.2212 10.0186 35.8686 12.1846C40.3565 15.8565 45.2562 14.6585 48.1271 12.1978C50.3885 10.2594 52.8657 9.09093 55.6312 9.42805C58.3691 9.76181 61.1614 11.5459 64.1308 14.9722C64.4541 15.3452 64.4138 15.9096 64.0408 16.2329C63.6678 16.5561 63.1033 16.5158 62.7801 16.1428C59.9401 12.866 57.5184 11.4588 55.4149 11.2024Z"
-                          fill="#7083F5"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M55.4149 20.5825C53.339 20.3295 51.3475 21.1719 49.2904 22.935C45.9052 25.8366 40.0312 27.28 34.7367 22.9482C32.4686 21.0924 30.4916 20.7991 28.8583 21.0713C27.1671 21.3531 25.7447 22.2547 24.6267 23.0001C22.8559 24.1806 20.9058 25.4212 18.66 25.7123C16.3417 26.0128 13.8663 25.293 11.0464 22.9431C8.68536 20.9755 6.66501 20.597 5.11309 20.8358C3.52519 21.0801 2.28797 21.9923 1.576 22.8338C1.25716 23.2106 0.69323 23.2576 0.316424 22.9387C-0.0603826 22.6199 -0.107377 22.056 0.211459 21.6792C1.138 20.5842 2.73865 19.3926 4.84128 19.0691C6.97988 18.7401 9.50271 19.3299 12.1907 21.5699C14.7333 23.6886 16.7266 24.1605 18.4302 23.9396C20.2061 23.7094 21.831 22.7156 23.6352 21.5128L24.1309 22.2565L23.6352 21.5128C24.7515 20.7686 26.4572 19.6593 28.5644 19.3081C30.7294 18.9473 33.2212 19.3987 35.8686 21.5647C40.3565 25.2366 45.2562 24.0386 48.1271 21.5779C50.3885 19.6396 52.8657 18.4711 55.6312 18.8082C58.3691 19.1419 61.1614 20.9261 64.1308 24.3523C64.4541 24.7253 64.4138 25.2897 64.0408 25.613C63.6678 25.9363 63.1033 25.896 62.7801 25.523C59.9401 22.2461 57.5184 20.8389 55.4149 20.5825Z"
-                          fill="#7083F5"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M55.4149 29.9622C53.339 29.7091 51.3475 30.5515 49.2904 32.3147C45.9052 35.2162 40.0312 36.6597 34.7367 32.3278C32.4686 30.4721 30.4916 30.1787 28.8583 30.4509C27.1671 30.7328 25.7447 31.6344 24.6267 32.3797C22.8559 33.5603 20.9058 34.8008 18.66 35.0919C16.3417 35.3924 13.8663 34.6726 11.0464 32.3227C8.68536 30.3551 6.66501 29.9767 5.11309 30.2154C3.52519 30.4597 2.28797 31.372 1.576 32.2134C1.25716 32.5902 0.69323 32.6372 0.316424 32.3184C-0.0603826 31.9995 -0.107377 31.4356 0.211459 31.0588C1.138 29.9638 2.73865 28.7722 4.84128 28.4488C6.97988 28.1197 9.50271 28.7095 12.1907 30.9495C14.7333 33.0683 16.7266 33.5401 18.4302 33.3193C20.2061 33.0891 21.831 32.0953 23.6352 30.8925L24.1309 31.6361L23.6352 30.8925C24.7515 30.1483 26.4572 29.039 28.5644 28.6878C30.7294 28.3269 33.2212 28.7783 35.8686 30.9444C40.3565 34.6163 45.2562 33.4183 48.1271 30.9575C50.3885 29.0192 52.8657 27.8507 55.6312 28.1878C58.3691 28.5216 61.1614 30.3057 64.1308 33.7319C64.4541 34.1049 64.4138 34.6694 64.0408 34.9926C63.6678 35.3159 63.1033 35.2756 62.7801 34.9026C59.9401 31.6258 57.5184 30.2186 55.4149 29.9622Z"
-                          fill="#7083F5"
-                        />
-                      </svg>
-                    </div>
-                    <div class="e g h jc uc bg"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="uc qg kn/2">
-                <div class="wow fadeInUp ym rn" data-wow-delay=".3s">
-                  <span class="_a zb pi vi dj jm">
-                    Conçu pour les professionnels de santé
-                  </span>
-                  <h2 class="_a qi ui _i ok tl im lm">À propos de OrdoPro</h2>
-                  <p class="xa ki yi bj">
-                    OrdoPro est une application de gestion développée en étroite
-                    collaboration avec des infirmiers libéraux. Notre solution
-                    vise à simplifier et optimiser la gestion quotidienne des
-                    infirmiers libéraux, leur permettant de gagner du temps
-                    précieux pour leur vie personnelle et professionnelle.
-                  </p>
-                  <p class="xa ki yi bj">
-                    Notre mission est d'offrir un outil intuitif et évolutif où
-                    chaque utilisateur peut être acteur du changement. En étant
-                    à l'écoute de vos besoins et suggestions, nous faisons
-                    évoluer l'application en permanence pour qu'elle reste
-                    parfaitement alignée avec votre pratique quotidienne,
-                    libérant ainsi du temps pour votre vie personnelle.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p class="prelaunch-eyebrow">OrdoPro</p>
+            <h2>Une organisation complète, pensée pour les IDEL.</h2>
           </div>
-        </div>
-
-        <!-- Graphics -->
-        <div class="e q x ha">
-          <svg
-            width="95"
-            height="190"
-            viewBox="0 0 95 190"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="95"
-              cy="95"
-              r="77"
-              stroke="url(#paint0_linear_47_27)"
-              stroke-width="36"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_47_27"
-                x1="0"
-                y1="0"
-                x2="224.623"
-                y2="130.324"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#FF8FE8" />
-                <stop offset="1" stop-color="#FFC960" />
-              </linearGradient>
-            </defs>
-          </svg>
+          <div>
+            <p>
+              Le parcours mobile OrdoPro a été pensé autour du suivi des
+              patients, des visites et des ordonnances. Les documents importés
+              et les propositions d'extraction restent vérifiables et
+              modifiables par l'IDEL.
+            </p>
+            <p>
+              Le socle gratuit prévu pour OrdoPro réunira les fonctions
+              essentielles, sans abonnement ni carte bancaire. Vous gardez la
+              décision : les informations, prescriptions et échanges se
+              vérifient avant validation.
+            </p>
+          </div>
         </div>
       </section>
       <!-- ======= About End ======= -->
 
-      <!-- ======= Pricing Start ======= -->
-      <section id="pricing" class="f ga vh">
+      <!-- ======= FAQ Start ======= -->
+      <section id="faq" class="prelaunch-faq">
         <div class="a">
-          <div class="wow fadeInUp la bb pd ji" data-wow-delay=".2s">
-            <h2 class="_a qi ui _i ok tl im lm">Notre Offre Exclusive</h2>
-            <p class="ki bj">
-              Découvrez notre formule optimisée pour votre activité.
+          <div class="prelaunch-faq__heading">
+            <div>
+              <p class="prelaunch-eyebrow">FAQ OrdoPro</p>
+              <h2>Les réponses à vos questions.</h2>
+            </div>
+            <p>
+              Gratuité, ordonnances, rappels ou coordination : les repères
+              essentiels pour comprendre l’offre mobile OrdoPro.
             </p>
           </div>
-        </div>
 
-        <div class="a sd ze">
-          <div class="wow fadeInUp qb bc le ne" data-wow-delay=".25s">
-            <label for="togglePlan" class="cc le">
-              <input
-                type="checkbox"
-                name="togglePlan"
-                id="togglePlan"
-                class="c"
-              />
-              <span class="monthly oi vi _i ok"> Mensuel </span>
-              <span class="pa bc oc zc ee le af vf hg">
-                <span class="dot zb pc wc af tf mj"></span>
-              </span>
-              <span class="yearly oi vi _i ok"> Annuel </span>
-            </label>
-          </div>
-
-          <div class="qa bc je ne">
-            <div class="uc mg am/2 kn/3">
-              <div
-                class="wow fadeInUp bb gf tf yg zg ij jk rk zm go gp"
-                data-wow-delay=".2s"
-              >
-                <h3 class="eb mi wi xi _i ok">Offre Essentielle</h3>
-                <p class="rb ki bj">
-                  Accédez aux fonctionnalités de base pour bien démarrer.
+          <div class="prelaunch-faq__list">
+            <details class="prelaunch-faq__item" open>
+              <summary>Que comprend le socle mobile gratuit OrdoPro ?</summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  Le socle gratuit d’OrdoPro réunit l’organisation des tournées,
+                  les dossiers et transmissions, le scan des prescriptions au
+                  format SCOR, les alertes d'anomalies CPAM, les pré-alertes
+                  d'échéance, les rappels Google Agenda, les prescriptions
+                  infirmières et les captures et brouillons sans limite.
                 </p>
-
-                <p class="of pf _h _i dk ok" id="priceDisplay"></p>
-
-                <div class="ve ai bi">
-                  <p class="bc ki _i qk">
-                    <span class="sb tb">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_44_7)">
-                          <path
-                            d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                            fill="#00BE6C"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_44_7">
-                            <rect width="16" height="16" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                    Suivi des patients
-                  </p>
-                  <p class="bc ki _i qk">
-                    <span class="sb tb">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_44_7)">
-                          <path
-                            d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                            fill="#00BE6C"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_44_7">
-                            <rect width="16" height="16" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                    Gestion des ordonnances
-                  </p>
-                  <p class="bc ki _i qk">
-                    <span class="sb tb">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_44_7)">
-                          <path
-                            d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                            fill="#00BE6C"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_44_7">
-                            <rect width="16" height="16" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                    Notifications des ordonnances
-                  </p>
-                  <p class="bc ki _i qk">
-                    <span class="sb tb">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_44_7)">
-                          <path
-                            d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                            fill="#00BE6C"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_44_7">
-                            <rect width="16" height="16" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                    Contactez le cabinet ou le médecin
-                  </p>
-                  <p class="bc ki _i qk">
-                    <span class="sb tb">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_44_7)">
-                          <path
-                            d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
-                            fill="#00BE6C"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_44_7">
-                            <rect width="16" height="16" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </span>
-                    Support 24/7
-                  </p>
-                </div>
-
-                <a
-                  href="https://app.ordopro.fr/login"
-                  class="zb uc _e uf lg pg ji ki vi aj pj kk tk"
-                >
-                  Choisir cette offre
-                </a>
               </div>
-              <span class="bb nd ki yi bj"
-                >* Bénéficiez d'une déduction fiscale</span
-              >
-            </div>
+            </details>
+
+            <details class="prelaunch-faq__item">
+              <summary>
+                OrdoPro remplace-t-il mon logiciel de facturation ?
+              </summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  Non. OrdoPro se concentre sur les tournées, le suivi des
+                  patients et des ordonnances. La facturation et la
+                  télétransmission ne font pas partie du socle mobile présenté.
+                </p>
+              </div>
+            </details>
+
+            <details class="prelaunch-faq__item">
+              <summary>Quels documents puis-je ajouter à un dossier ?</summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  Le scan prépare les pièces de la prescription au format SCOR.
+                  Vous pouvez vérifier et corriger les informations extraites
+                  avant de confirmer.
+                </p>
+              </div>
+            </details>
+
+            <details class="prelaunch-faq__item">
+              <summary>
+                La lecture d’ordonnance est-elle toujours exacte ?
+              </summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  Non. La lecture assistée peut se tromper, notamment si un
+                  document est incomplet ou difficile à lire. Les propositions
+                  et points de vigilance doivent être relus par l’IDEL. Ils ne
+                  remplacent pas son jugement professionnel.
+                </p>
+              </div>
+            </details>
+
+            <details class="prelaunch-faq__item">
+              <summary>
+                Comment fonctionnent les échéances et les rappels ?
+              </summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  Une pré-alerte signale les échéances 7 à 10 jours à l'avance.
+                  Les rappels peuvent aussi être synchronisés avec Google
+                  Agenda. Les notifications dépendent de vos réglages et peuvent
+                  ne pas être reçues : consultez la liste des échéances.
+                </p>
+              </div>
+            </details>
+
+            <details class="prelaunch-faq__item">
+              <summary>
+                Comment OrdoPro repère-t-il les anomalies CPAM ?
+              </summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  OrdoPro détecte automatiquement les anomalies de facturation
+                  CPAM et signale les points à vérifier. Relisez chaque alerte
+                  avant de préparer vos documents ou échanges.
+                </p>
+              </div>
+            </details>
+
+            <details class="prelaunch-faq__item">
+              <summary>
+                OrdoPro envoie-t-il automatiquement les demandes ?
+              </summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  Créez autant de captures et de brouillons que nécessaire pour
+                  un renouvellement, une transmission ou une correction. Relisez
+                  le contenu, choisissez le destinataire et confirmez l'envoi
+                  depuis Gmail.
+                </p>
+              </div>
+            </details>
+
+            <details class="prelaunch-faq__item">
+              <summary>
+                Peut-on travailler à plusieurs dans un cabinet ?
+              </summary>
+              <div class="prelaunch-faq__answer">
+                <p>
+                  Le socle prévoit le travail en cabinet avec des accès associés
+                  aux rôles des membres. Les dossiers et transmissions sont
+                  destinés aux personnes autorisées dans le cabinet.
+                </p>
+              </div>
+            </details>
           </div>
+
+          <p class="prelaunch-faq__contact">
+            Une autre question ?
+            <a href="mailto:contact@ordopro.fr">Écrivez-nous.</a>
+          </p>
         </div>
-        <!-- Graphics -->
-        <div class="e h t/2 ha dc xl">
-          <svg
-            width="622"
-            height="1236"
-            viewBox="0 0 622 1236"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g opacity="0.2" filter="url(#filter0_f_26_85)">
-              <circle
-                cx="4"
-                cy="618"
-                r="368"
-                fill="url(#paint0_linear_26_85)"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_26_85"
-                x="-614"
-                y="0"
-                width="1236"
-                height="1236"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="125"
-                  result="effect1_foregroundBlur_26_85"
-                />
-              </filter>
-              <linearGradient
-                id="paint0_linear_26_85"
-                x1="-364"
-                y1="250"
-                x2="506.12"
-                y2="754.835"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#FF8FE8" />
-                <stop offset="1" stop-color="#FFC960" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="e g q ha">
-          <svg
-            width="602"
-            height="1154"
-            viewBox="0 0 602 1154"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g opacity="0.25" filter="url(#filter0_f_26_84)">
-              <circle
-                cx="577"
-                cy="577"
-                r="317"
-                fill="url(#paint0_linear_26_84)"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_26_84"
-                x="0"
-                y="0"
-                width="1154"
-                height="1154"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="130"
-                  result="effect1_foregroundBlur_26_84"
-                />
-              </filter>
-              <linearGradient
-                id="paint0_linear_26_84"
-                x1="183.787"
-                y1="894"
-                x2="970.173"
-                y2="346.491"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#8EA5FE" />
-                <stop offset="0.541667" stop-color="#BEB3FD" />
-                <stop offset="1" stop-color="#90D1FF" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <!-- Graphics End -->
       </section>
-      <!-- ======= Pricing End ======= -->
+      <!-- ======= FAQ End ======= -->
+
+      <!-- ======= OrdoPro Summary Start ======= -->
+      <section id="availability" class="prelaunch-availability">
+        <div class="a">
+          <p class="prelaunch-eyebrow">OrdoPro pour les IDEL</p>
+          <h2>Vos tournées, vos patients, vos échéances.</h2>
+          <p>
+            Le suivi des patients, des tournées et des échéances pensé dans un
+            même parcours, pour vous concentrer sur le soin.
+          </p>
+          <a class="prelaunch-text-link" href="#features"
+            >Voir toutes les fonctionnalités
+            <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+      <!-- ======= OrdoPro Summary End ======= -->
 
       <!-- ======= Contact Start ======= -->
       <section id="support" class="zh mh">
         <div class="a">
           <div class="wow fadeInUp la bb pd ji" data-wow-delay=".2s">
-            <h2 class="_a qi ui _i ok tl im lm">Contactez-nous</h2>
-            <p class="ki bj">
-              Vous avez des questions ou besoin d'assistance ? N'hésitez pas à
-              nous envoyer un message. Notre équipe est là pour vous aider à
-              chaque étape.
-            </p>
+            <h2 class="_a qi ui _i ok tl im lm">Une question sur OrdoPro ?</h2>
             <p class="ki bj mt-4">
-              Contactez-nous par email à :
+              Vous pouvez nous joindre par email à :
               <a href="mailto:contact@ordopro.fr">contact@ordopro.fr</a>
             </p>
           </div>
@@ -902,7 +437,7 @@
           <div class="na bc je">
             <div class="ja uc sg qm kn/3">
               <p class="za ji ki aj vm lo">
-                &copy; 2025 Ordopro. Tous droits réservés.
+                &copy; 2026 OrdoPro. Tous droits réservés.
               </p>
             </div>
 
@@ -914,9 +449,6 @@
               <div class="bc le ne ue gl dm vn">
                 <a href="./politique_de_confidentialite.html" class="ki aj">
                   Politique de confidentialité
-                </a>
-                <a href="./cgv.html" class="ki aj">
-                  Conditions générales de vente
                 </a>
               </div>
             </div>
@@ -930,15 +462,13 @@
     <a
       href="#"
       class="back-to-top d m n o fa dc fc vc le ne _e vf aj hj mj nj rj"
+      aria-label="Retour en haut"
     >
       <span class="ab ic xc ce lf mf qf"></span>
     </a>
     <!-- ======= Back To Top End ======= -->
 
     <!-- ======= JS Files ======= -->
-    <script src="js/scroll-menu.js"></script>
-    <script defer src="js/bundle.js"></script>
-    <script src="js/pricing-toggle.js"></script>
-    <!-- Scripts -->
+    <script src="js/prelaunch.js"></script>
   </body>
 </html>
