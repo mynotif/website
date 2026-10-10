@@ -16,3 +16,7 @@ Sept questions-réponses ont été ajoutées à la vitrine et au menu, avec acco
 ## Extension de l’offre gratuite — 10 octobre 2026
 
 `SHIP: BLOCKED` avant merge/publication. Les nouveaux claims sont visibles sur la branche de PR pour revue, mais la revue indépendante `BLOCKED` relève un Critical Gmail et plusieurs Major. CI/Preview peuvent passer sans lever ce gate. Reprendre seulement après cadrage/validation PRD et ADR pour Gmail, Google Agenda, cadence, contrôle CPAM, format SCOR et quotas/coûts, puis nouvelle Verify/Review.
+
+## Décision explicite du propriétaire — 10 octobre 2026
+
+Le propriétaire demande de garder les nouvelles annonces, de merger la vitrine et de cadrer les risques produit dans les dépôts applicatifs. Cet ordre autorise la publication malgré la revue indépendante `BLOCKED` ; il ne change pas son verdict et ne signifie pas que les intégrations sont implémentées ou validées. Suivi créé : [mobile #61](https://github.com/mynotif/ordopro_mobile/issues/61), [backend #259](https://github.com/mynotif/mynotif-backend/issues/259), [infra #19](https://github.com/mynotif/mynotif-infra/issues/19), en plus des tickets de cadrage déjà ouverts liés depuis #61. La PR merge déploie GitHub Pages sur le domaine configuré `ordopro.fr`. Aucun code applicatif ou connecteur n’est inclus dans cette livraison.
