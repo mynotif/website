@@ -13,3 +13,7 @@ Aucune API, migration, authentification, donnée sensible ou service externe ajo
 ## Révision éditoriale — 10 octobre 2026
 
 La page d'accueil devient une présentation produit du socle gratuit : couverture des usages recensés dans F01–F17 pertinents à la vitrine, CTA vers les fonctionnalités/contact, suppression des statuts de pré-lancement. Conserver la confirmation humaine sur les données, prescriptions et échanges ; ne pas annoncer les treize règles d'Eliane comme couvertes, la télétransmission intégrée, ni l'accès store/inscription. Vérifier liens, navigation, rendu mobile/desktop et formulation sans statut de non-disponibilité.
+
+## FAQ OrdoPro — 10 octobre 2026
+
+Ajouter une section FAQ à `public/index.html`, reliée à la navigation, avec des questions originales inspirées des thèmes d'Eliane et Ozzen : gratuité, facturation, formats/OCR et relecture, rappels, brouillons d'échanges, usage en cabinet. Employer les contrôles natifs `<details>/<summary>` pour l'accessibilité et éviter un nouveau JavaScript ; créer des styles cohérents dans `public/css/style.css`, responsive et visibles au clavier. Vérifier le contenu au PRD, les ancres, l'ouverture/fermeture des réponses sur desktop/mobile, le formatage et la console. Aucun tarif ni garantie concurrente non vérifiée.

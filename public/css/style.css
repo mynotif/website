@@ -3741,6 +3741,112 @@ section[id] {
   margin-top: 18px;
 }
 
+.prelaunch-faq {
+  color: var(--prelaunch-ink);
+  padding: clamp(76px, 10vw, 140px) 0;
+}
+
+.prelaunch-faq__heading {
+  align-items: end;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+  margin-bottom: 48px;
+}
+
+.prelaunch-faq h2 {
+  color: var(--prelaunch-ink);
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 4.3vw, 62px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  margin: 16px 0 0;
+  max-width: 680px;
+}
+
+.prelaunch-faq__heading > p,
+.prelaunch-faq__answer p {
+  color: var(--prelaunch-muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.prelaunch-faq__list {
+  border-bottom: 1px solid var(--prelaunch-line);
+  display: grid;
+  gap: 0 48px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.prelaunch-faq__item {
+  border-top: 1px solid var(--prelaunch-line);
+  padding: 8px 0;
+}
+
+.prelaunch-faq__item summary {
+  align-items: center;
+  color: var(--prelaunch-ink);
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  font-weight: 650;
+  gap: 20px;
+  justify-content: space-between;
+  line-height: 1.45;
+  list-style: none;
+  min-height: 64px;
+}
+
+.prelaunch-faq__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.prelaunch-faq__item summary::after {
+  color: var(--prelaunch-teal);
+  content: "+";
+  flex: 0 0 auto;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.prelaunch-faq__item[open] summary::after {
+  content: "−";
+}
+
+.prelaunch-faq__item summary:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid #f5b543;
+  outline-offset: 4px;
+}
+
+.prelaunch-faq__answer {
+  padding: 0 36px 20px 0;
+}
+
+.prelaunch-faq__answer p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.prelaunch-faq__contact {
+  color: var(--prelaunch-muted);
+  font-size: 17px;
+  margin-top: 36px;
+}
+
+.prelaunch-faq__contact a {
+  color: var(--prelaunch-teal);
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.prelaunch-faq__contact a:focus-visible {
+  outline: 3px solid #f5b543;
+  outline-offset: 4px;
+}
+
 .prelaunch-availability {
   background: var(--prelaunch-ink);
   text-align: center;
@@ -3771,7 +3877,8 @@ section[id] {
 
 @media (max-width: 900px) {
   .prelaunch-hero__grid,
-  .prelaunch-about__grid {
+  .prelaunch-about__grid,
+  .prelaunch-faq__heading {
     grid-template-columns: 1fr;
   }
 
@@ -3791,6 +3898,10 @@ section[id] {
   }
 
   .prelaunch-features {
+    grid-template-columns: 1fr;
+  }
+
+  .prelaunch-faq__list {
     grid-template-columns: 1fr;
   }
 

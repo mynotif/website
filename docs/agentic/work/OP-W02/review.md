@@ -9,3 +9,11 @@ Limite : revue statique du reviewer ; essais navigateur, formatage et contrôle 
 ## Revue de la révision produit — 10 octobre 2026
 
 `REVIEW: PASS_WITH_MINOR`. La revue indépendante a levé les deux écarts Major précédents : disponibilité non établie présentée comme effective, et absence de mention du parcours documentaire SCOR. Le meta et le paragraphe tarifaire qualifient maintenant le socle gratuit d'imaginé/prévu ; le texte de SCOR n'allègue ni télétransmission ni conformité. Les liens d'ancre sont valides, les CTA restent internes. Aucun Major restant dans la passe ciblée. La revue était statique ; l'implementer a rejoué le parcours navigateur mobile et contrôlé la console séparément. Le libellé d'anomalies documentaires demeure générique, conformément au PRD qui ne fixe pas les règles de contrôle ni n'établit leur parité avec Eliane.
+
+## Revue FAQ — 10 octobre 2026
+
+`REVIEW: PASS_WITH_MINOR`. Revue indépendante statique de `/root/site_review` : aucun Critical ni Major. Le périmètre cité par la FAQ correspond au PRD ; le rappel peut ne pas être reçu est explicité. Deux phrases pourraient être raccourcies/ponctuées davantage, sans risque fonctionnel ni de sécurité.
+
+## Revue finale FAQ — 10 octobre 2026
+
+`REVIEW: PASS`. Après corrections de forme, le reviewer indépendant confirme qu’aucun écart Critical, Major ou Minor n’est ouvert pour la FAQ. Revue statique ciblée ; elle ne remplace pas la vérification navigateur/CI ni la validation humaine des notices juridiques.
