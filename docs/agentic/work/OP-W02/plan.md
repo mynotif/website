@@ -9,3 +9,7 @@
 5. Vérifier Prettier, absence de prix/CTA applicatif sur l'accueil, rendu desktop/mobile, menu, ancres et console.
 
 Aucune API, migration, authentification, donnée sensible ou service externe ajouté. Aucun achat ni déploiement dans Execute. Le ticket GH propre à cette préannonce et le commit unique seront créés au stade Ship si la publication est autorisée ; OP-W01 reste le ticket du lancement complet.
+
+## Révision éditoriale — 10 octobre 2026
+
+La page d'accueil devient une présentation produit du socle gratuit : couverture des usages recensés dans F01–F17 pertinents à la vitrine, CTA vers les fonctionnalités/contact, suppression des statuts de pré-lancement. Conserver la confirmation humaine sur les données, prescriptions et échanges ; ne pas annoncer les treize règles d'Eliane comme couvertes, la télétransmission intégrée, ni l'accès store/inscription. Vérifier liens, navigation, rendu mobile/desktop et formulation sans statut de non-disponibilité.
